@@ -6,6 +6,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.example.nouman.pets.data.PetContract.PetEntry;
 
+/**
+ * Database helper for Pets app. Manages database creation and version management.
+ */
 public class PetDbHelper extends SQLiteOpenHelper {
 
     public static final String LOG_TAG = PetDbHelper.class.getSimpleName();

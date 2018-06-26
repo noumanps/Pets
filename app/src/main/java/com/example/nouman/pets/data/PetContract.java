@@ -2,7 +2,10 @@ package com.example.nouman.pets.data;
 
 import android.provider.BaseColumns;
 
-public class PetContract {
+/**
+ * API Contract for the Pets app.
+ */
+public final class PetContract {
 
     // To prevent someone from accidentally instantiating the contract class,
     // give it an empty constructor.
@@ -61,6 +64,6 @@ public class PetContract {
         public static final int GENDER_UNKNOWN = 0;
         public static final int GENDER_MALE = 1;
         public static final int GENDER_FEMALE = 2;
-    }
+        }
 
 }

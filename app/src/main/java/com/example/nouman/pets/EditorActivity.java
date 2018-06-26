@@ -18,11 +18,14 @@ import android.widget.Toast;
 import com.example.nouman.pets.data.PetContract.PetEntry;
 import com.example.nouman.pets.data.PetDbHelper;
 
+/**
+ * Allows user to create a new pet or edit an existing one.
+ */
 public class EditorActivity extends AppCompatActivity {
 
     /** EditText field to enter the pet's name */
     private EditText mNameEditText;
-    
+
     /** EditText field to enter the pet's breed */
     private EditText mBreedEditText;
 
@@ -45,10 +48,10 @@ public class EditorActivity extends AppCompatActivity {
         setContentView(R.layout.activity_editor);
 
         // Find all relevant views that we will need to read user input from
-        mNameEditText = (EditText) findViewById(R.id.edit_pet_name);
-        mBreedEditText = (EditText) findViewById(R.id.edit_pet_breed);
-        mWeightEditText = (EditText) findViewById(R.id.edit_pet_weight);
-        mGenderSpinner = (Spinner) findViewById(R.id.spinner_gender);
+        mNameEditText = findViewById(R.id.edit_pet_name);
+        mBreedEditText = findViewById(R.id.edit_pet_breed);
+        mWeightEditText = findViewById(R.id.edit_pet_weight);
+        mGenderSpinner = findViewById(R.id.spinner_gender);
 
         setupSpinner();
     }
